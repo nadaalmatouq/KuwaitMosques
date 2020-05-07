@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		1455EFB124632AE500D4822C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455EFB024632AE500D4822C /* AppDelegate.swift */; };
 		1455EFB324632AE500D4822C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455EFB224632AE500D4822C /* SceneDelegate.swift */; };
-		1455EFB524632AE500D4822C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455EFB424632AE500D4822C /* ContentView.swift */; };
+		1455EFB524632AE500D4822C /* MosquesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455EFB424632AE500D4822C /* MosquesListView.swift */; };
 		1455EFB724632B0100D4822C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1455EFB624632B0100D4822C /* Assets.xcassets */; };
 		1455EFBA24632B0200D4822C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1455EFB924632B0200D4822C /* Preview Assets.xcassets */; };
 		1455EFBD24632B0200D4822C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1455EFBB24632B0200D4822C /* LaunchScreen.storyboard */; };
+		1455EFC72463340A00D4822C /* Mosque.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455EFC62463340A00D4822C /* Mosque.swift */; };
+		1455EFC92463A4B100D4822C /* MosqueDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1455EFC82463A4B100D4822C /* MosqueDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1455EFAD24632AE500D4822C /* KuwaitMosques.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KuwaitMosques.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1455EFB024632AE500D4822C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1455EFB224632AE500D4822C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1455EFB424632AE500D4822C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1455EFB424632AE500D4822C /* MosquesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosquesListView.swift; sourceTree = "<group>"; };
 		1455EFB624632B0100D4822C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1455EFB924632B0200D4822C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1455EFBC24632B0200D4822C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1455EFBE24632B0200D4822C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1455EFC62463340A00D4822C /* Mosque.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mosque.swift; sourceTree = "<group>"; };
+		1455EFC82463A4B100D4822C /* MosqueDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosqueDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,8 @@
 			children = (
 				1455EFB024632AE500D4822C /* AppDelegate.swift */,
 				1455EFB224632AE500D4822C /* SceneDelegate.swift */,
-				1455EFB424632AE500D4822C /* ContentView.swift */,
+				1455EFC524632CA800D4822C /* Models */,
+				1455EFC424632C9E00D4822C /* Views */,
 				1455EFB624632B0100D4822C /* Assets.xcassets */,
 				1455EFBB24632B0200D4822C /* LaunchScreen.storyboard */,
 				1455EFBE24632B0200D4822C /* Info.plist */,
@@ -73,6 +78,23 @@
 				1455EFB924632B0200D4822C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1455EFC424632C9E00D4822C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1455EFB424632AE500D4822C /* MosquesListView.swift */,
+				1455EFC82463A4B100D4822C /* MosqueDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1455EFC524632CA800D4822C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1455EFC62463340A00D4822C /* Mosque.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1455EFB124632AE500D4822C /* AppDelegate.swift in Sources */,
+				1455EFC72463340A00D4822C /* Mosque.swift in Sources */,
 				1455EFB324632AE500D4822C /* SceneDelegate.swift in Sources */,
-				1455EFB524632AE500D4822C /* ContentView.swift in Sources */,
+				1455EFC92463A4B100D4822C /* MosqueDetails.swift in Sources */,
+				1455EFB524632AE500D4822C /* MosquesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
